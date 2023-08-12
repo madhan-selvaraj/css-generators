@@ -6,12 +6,15 @@
   align-items: center;
   font-size: 2.5rem;
 
-  background: linear-gradient(270deg, #e39600, #ea4c89, #8f48eb);
-  background-size: 600% 600%;
-
-  -webkit-animation: movingGradient 5s ease infinite;
-  -moz-animation: movingGradient 5s ease infinite;
-  animation: movingGradient 5s ease infinite;
+  -webkit-animation-name: movingGradient;
+  -moz-animation-name: movingGradient;
+  animation-name: movingGradient;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 .content {
