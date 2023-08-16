@@ -2,6 +2,8 @@
 
 > Work in progress
 
+[Live](https://css-styles-generators.netlify.app/gradient-background)
+
 - [x] Background gradient animation generator
 - [ ] Glassmorphism UI generator
 - [ ] Neumorphism UI generator
