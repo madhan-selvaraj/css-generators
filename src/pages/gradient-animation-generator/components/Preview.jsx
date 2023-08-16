@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import "./preview.css";
 
 const Preview = ({ speed, gradientAngle, colors }) => {
@@ -7,7 +6,7 @@ const Preview = ({ speed, gradientAngle, colors }) => {
     backgroundImage: `linear-gradient(${gradientAngle}deg, ${colors.join(
       ", "
     )})`,
-    backgroundSize: "600% 600%",
+    backgroundSize: `${colors.length * 100}% ${colors.length * 100}%`,
   };
 
   return (

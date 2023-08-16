@@ -35,9 +35,12 @@ const reducer = (state, action) => {
         ),
       };
     case "REMOVE_COLOR":
+      // eslint-disable-next-line no-case-declarations
+      const updatedPalette = [...state.colors];
+      updatedPalette.splice(action.payload, 1);
       return {
         ...state,
-        colors: [...state.colors].splice(action.payload.index, 1),
+        colors: updatedPalette,
       };
     default:
       return state;
@@ -46,6 +49,7 @@ const reducer = (state, action) => {
 
 const useAnimatedGradientBackgroundReducer = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
+
   const updateSpeed = (speed) =>
     dispatch({ type: "UPDATE_SPEED", payload: speed });
   const updateGradientAngle = (angle) =>
