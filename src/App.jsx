@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import "./App.css";
-import { AnimatedGradientBackground } from "./pages";
+import { AnimatedGradientBackground, GlassmorphismGenerator } from "./pages";
 
 function App() {
   return (
@@ -11,6 +11,10 @@ function App() {
         <Route
           path="/gradient-background"
           Component={AnimatedGradientBackground}
+        />
+        <Route
+          path="/glassmorphism-generator"
+          Component={GlassmorphismGenerator}
         />
       </Routes>
     </BrowserRouter>

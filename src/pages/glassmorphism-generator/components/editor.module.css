@@ -1,0 +1,55 @@
+.container {
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #222;
+  color: #fff;
+}
+
+.editor {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.actions {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.actions button {
+  padding: 10px 20px;
+}
+.sliderInput {
+  width: 100%;
+  display: inline-flex;
+  gap: 5px;
+}
+
+.sliderInput input {
+  flex: 1;
+}
+
+.colorContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.addColor {
+  width: 60px;
+  height: 30px;
+  align-self: center;
+  padding: 3px 8px;
+
+  border: 1px solid #333;
+  border-radius: 50px;
+  background: none;
+  color: #fff;
+  font-size: 1.5rem;
+}

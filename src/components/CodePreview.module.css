@@ -1,5 +1,6 @@
 .dialog {
   min-width: 480px;
+  max-width: 600px;
   margin: auto;
   padding: 30px;
   padding-top: 50px;
@@ -9,6 +10,12 @@
   background: #444;
   color: #fff;
   font-size: 1rem;
+}
+
+.dialog pre {
+  white-space: pre;
+  overflow: scroll;
+  text-overflow: clip;
 }
 
 .closeButton {
