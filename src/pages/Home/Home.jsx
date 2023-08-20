@@ -12,7 +12,7 @@ const generators = [
   },
   {
     name: "Box shadow Generator",
-    path: "",
+    path: "/box-shadow-generator",
   },
   {
     name: "Neumorphism UI Generator",
